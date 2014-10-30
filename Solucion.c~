@@ -68,6 +68,8 @@ int main(int argc, char **argv){
    
     fprintf(file, "%f \t %f \t %f \t %f \n", t[0],  x[0], x[1],x[2] );
   }
+
+  printf("%f\n", t[1]);
   
 
   
