@@ -26,7 +26,7 @@ int main(int argc, char **argv){
 
   alpha=2*PI*atoi(argv[2])/360;
 
-  n_points=1E6+1;
+  n_points=1E5+1;
 
   x = malloc(3 * sizeof(float));
   v = malloc(3 * sizeof(float));
@@ -125,7 +125,7 @@ double RungeKuttaFourthOrderStep(double *x, double *v, double t_old){
   double k_1_prime1[3], k_1_prime2[3], t1, x_1[3], v_1[3], h, t2, x_2[3], v_2[3], k_2_prime1[3], k_2_prime2[3], k_3_prime1[3], k_3_prime2[3], k_4_prime1[3], k_4_prime2[3], t3, x_3[3], v_3[3],average_k_1[3], average_k_2[3],t_new, x_new[3], v_new[3];
 
 
-  h=1E-4;
+  h=1E-3;
 
 
 
