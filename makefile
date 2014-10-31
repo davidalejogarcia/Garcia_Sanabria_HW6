@@ -1,9 +1,6 @@
 all: trajectory.pdf trajectory_xy.pdf
 
-trajectory.pdf trajectory_xy.pdf:graficar.py
-	python graficar.py
-
-graficar.py:trayectoria_1000_60.dat
+trajectory.pdf trajectory_xy.pdf:graficar.py trayectoria_1000_60.dat
 	python graficar.py
 
 trayectoria_1000_60.dat:a.out
